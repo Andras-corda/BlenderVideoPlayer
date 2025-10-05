@@ -1,0 +1,231 @@
+/* RESPONSIVE DESIGN */
+
+/* Tablettes en mode paysage et petits écrans desktop */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+        margin-top: 24px;
+    }
+
+    .video-list {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+}
+
+/* Tablettes en mode portrait */
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    header {
+        padding: 16px 0;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .content-wrapper {
+        gap: 16px;
+    }
+
+    .current-video-info h2 {
+        font-size: 18px;
+    }
+
+    .current-video-info p {
+        font-size: 13px;
+    }
+
+    .section-title {
+        font-size: 15px;
+    }
+
+    footer {
+        margin-top: 32px;
+        padding: 20px 0;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}
+
+/* Smartphones en mode paysage */
+@media (max-width: 640px) {
+    body {
+        padding: 8px;
+    }
+
+    header {
+        padding: 12px 0;
+        margin-bottom: 16px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .video-container {
+        border-radius: 4px;
+        margin-bottom: 12px;
+    }
+
+    .current-video-info {
+        padding: 12px;
+    }
+
+    .current-video-info h2 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .current-video-info p {
+        font-size: 12px;
+    }
+
+    .video-item {
+        padding: 10px 12px;
+    }
+
+    .video-item-title {
+        font-size: 13px;
+    }
+
+    .video-item-desc {
+        font-size: 11px;
+    }
+
+    .video-thumbnail {
+        border-radius: 3px;
+        margin-bottom: 6px;
+    }
+
+    footer {
+        margin-top: 24px;
+        padding: 16px 0;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* Petits smartphones en mode portrait */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .content-wrapper {
+        gap: 12px;
+    }
+
+    .section-title {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .video-list {
+        max-height: 300px;
+    }
+}
+
+/* Orientation paysage pour smartphones */
+@media (max-height: 500px) and (orientation: landscape) {
+    body {
+        padding: 8px;
+    }
+
+    header {
+        padding: 8px 0;
+        margin-bottom: 12px;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    .content-wrapper {
+        gap: 12px;
+    }
+
+    .video-container {
+        margin-bottom: 8px;
+    }
+
+    .current-video-info {
+        padding: 10px;
+    }
+
+    footer {
+        margin-top: 16px;
+        padding: 12px 0;
+    }
+}
+
+/* Barre de défilement personnalisée pour webkit (Chrome, Safari, Edge) */
+@media (max-width: 1024px) {
+    .video-list::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .video-list::-webkit-scrollbar-track {
+        background: #0d1117;
+    }
+
+    .video-list::-webkit-scrollbar-thumb {
+        background: #21262d;
+        border-radius: 4px;
+    }
+
+    .video-list::-webkit-scrollbar-thumb:hover {
+        background: #30363d;
+    }
+}
+
+/* Amélioration des zones tactiles sur mobile */
+@media (hover: none) and (pointer: coarse) {
+    .video-item {
+        min-height: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .video-item:active {
+        background-color: #1c2128;
+    }
+}
+
+/* Support pour les écrans haute résolution */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .video-thumbnail {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecteur Vidéo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vidéos Blender</h1>
+            <p class="subtitle">Subtitle</p>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="main-content">
+                <div class="video-container" id="videoContainer">
+                    <iframe id="videoPlayer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="current-video-info" id="currentVideoInfo">
+                    <h2 id="currentTitle">Sélectionnez une vidéo</h2>
+                    <p id="currentDesc">Choisissez une vidéo dans la liste pour commencer la lecture</p>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <h3 class="section-title">Playlist</h3>
+                <div class="video-list" id="videoList"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>2025 Lecteur Vidéo. Fait par Andras (pour tout problème technique veuillez m'en informer).</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
