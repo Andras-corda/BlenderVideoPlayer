@@ -1,29 +1,65 @@
-let videos = [];
+let playlists = [];
+let currentPlaylistIndex = 0;
 let currentVideoIndex = null;
 
-// Charger les vidéos depuis le fichier JSON => Sert de bdd
-async function loadVideos() {
+// Charger les playlists depuis le fichier JSON
+async function loadPlaylists() {
     try {
         const response = await fetch('videos.json');
         if (!response.ok) {
-            throw new Error('Impossible de charger les vidéos');
+            throw new Error('Impossible de charger les playlists');
         }
-
-        videos = await response.json();
-        createVideoList();
+        const data = await response.json();
+        playlists = data.playlists;
         
-        if (videos.length > 0) {
-            loadVideo(0);
-        }
+        createPlaylistSelector();
+        loadPlaylist(0);
     } catch (error) {
-        console.error('Erreur lors du chargement des vidéos:', error);
+        console.error('Erreur lors du chargement des playlists:', error);
         document.getElementById('currentTitle').textContent = 'Erreur de chargement';
-        document.getElementById('currentDesc').textContent = 'Impossible de charger la liste des vidéos. Vérifiez que le fichier videos.json existe.';
+        document.getElementById('currentDesc').textContent = 'Impossible de charger les playlists. Vérifiez que le fichier videos.json existe.';
     }
 }
 
-// Créer la liste des vidéos dans la sidebar
-function createVideoList() {
+// Créer le sélecteur de playlists
+function createPlaylistSelector() {
+    const sidebar = document.querySelector('.sidebar');
+    
+    const playlistTabs = document.createElement('div');
+    playlistTabs.className = 'playlist-tabs';
+    playlistTabs.id = 'playlistTabs';
+    
+    playlists.forEach((playlist, index) => {
+        const tab = document.createElement('button');
+        tab.className = 'playlist-tab';
+        tab.textContent = playlist.name;
+        tab.onclick = () => loadPlaylist(index);
+        playlistTabs.appendChild(tab);
+    });
+    
+    sidebar.insertBefore(playlistTabs, sidebar.firstChild);
+}
+
+// Charger une playlist spécifique
+function loadPlaylist(playlistIndex) {
+    currentPlaylistIndex = playlistIndex;
+    const playlist = playlists[playlistIndex];
+    
+    document.querySelectorAll('.playlist-tab').forEach((tab, index) => {
+        tab.classList.toggle('active', index === playlistIndex);
+    });
+    
+    document.getElementById('playlistTitle').textContent = playlist.name;
+    
+    createVideoList(playlist.videos);
+    
+    if (playlist.videos.length > 0) {
+        loadVideo(0);
+    }
+}
+
+// Créer la liste des vidéos d'une playlist
+function createVideoList(videos) {
     const list = document.getElementById('videoList');
     list.innerHTML = '';
     
@@ -43,23 +79,25 @@ function createVideoList() {
 }
 
 // Charger une vidéo spécifique
-function loadVideo(index) {
-    const video = videos[index];
+function loadVideo(videoIndex) {
+    const playlist = playlists[currentPlaylistIndex];
+    const video = playlist.videos[videoIndex];
     const videoPlayer = document.getElementById('videoPlayer');
     const currentTitle = document.getElementById('currentTitle');
     const currentDesc = document.getElementById('currentDesc');
     
     // Mise à jour du lecteur
     videoPlayer.src = `https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0`;
+    
     currentTitle.textContent = video.title;
     currentDesc.textContent = video.description;
-
+    
     document.querySelectorAll('.video-item').forEach((item, i) => {
-        item.classList.toggle('active', i === index);
+        item.classList.toggle('active', i === videoIndex);
     });
     
-    currentVideoIndex = index;
+    currentVideoIndex = videoIndex;
 }
 
-// Chargement de la page
-window.addEventListener('DOMContentLoaded', loadVideos);
+// Initialisation au chargement de la page
+window.addEventListener('DOMContentLoaded', loadPlaylists);

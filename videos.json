@@ -1,32 +1,46 @@
-[
+{
+  "playlists": [
     {
-        "id": "",
-        "title": "",
-        "description": "",
-        "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
+      "name": "Playlist 1",
+      "description": "Ma première collection de vidéos",
+      "videos": [
+        {
+          "id": "z3sezgnRZhc",
+          "title": "Vidéo 1",
+          "description": "Description de la première vidéo",
+          "thumbnail": "https://img.youtube.com/vi/z3sezgnRZhc/mqdefault.jpg"
+        },
+        {
+          "id": "wTjAmCtdVsI",
+          "title": "Vidéo 2",
+          "description": "Description de la deuxième vidéo",
+          "thumbnail": "https://img.youtube.com/vi/wTjAmCtdVsI/mqdefault.jpg"
+        }
+      ]
     },
     {
-        "id": "",
-        "title": "",
-        "description": "",
-        "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
-    },
-    {
-        "id": "",
-        "title": "",
-        "description": "",
-        "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
-    },
-    {
-        "id": "",
-        "title": "",
-        "description": "",
-        "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
-    },
-    {
-    "id": "",
-    "title": "",
-    "description": "",
-    "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
+      "name": "Playlist 2",
+      "description": "Ma deuxième collection de vidéos",
+      "videos": [
+        {
+          "id": "qXmRlmrpz8Y",
+          "title": "Vidéo 3",
+          "description": "Description de la troisième vidéo",
+          "thumbnail": "https://img.youtube.com/vi/qXmRlmrpz8Y/mqdefault.jpg"
+        },
+        {
+          "id": "WbJCVBrKoJo",
+          "title": "Vidéo 4",
+          "description": "Description de la quatrième vidéo",
+          "thumbnail": "https://img.youtube.com/vi/WbJCVBrKoJo/mqdefault.jpg"
+        },
+        {
+          "id": "TiK1LkE1UDk",
+          "title": "Vidéo 5",
+          "description": "Nouvelle vidéo ajoutée",
+          "thumbnail": "https://img.youtube.com/vi/TiK1LkE1UDk/mqdefault.jpg"
+        }
+      ]
+    }
+  ]
 }
-]
