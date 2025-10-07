@@ -5,7 +5,7 @@ let currentVideoIndex = null;
 // Charger les playlists depuis le fichier JSON
 async function loadPlaylists() {
     try {
-        const response = await fetch('videos.json');
+        const response = await fetch('./JsonDB/videos.json');
         if (!response.ok) {
             throw new Error('Impossible de charger les playlists');
         }

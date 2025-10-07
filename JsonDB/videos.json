@@ -1,0 +1,76 @@
+{
+  "playlists": [
+    {
+      "name": "",
+      "description": "",
+      "videos": [
+        {
+          "id": "",
+          "title": "",
+          "description": "",
+          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
+        },
+        {
+          "id": "",
+          "title": "",
+          "description": "",
+          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
+        },
+        {
+          "id": "",
+          "title": "",
+          "description": "",
+          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "description": "",
+      "videos": [
+        {
+          "id": "",
+          "title": "",
+          "description": "",
+          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
+        },
+        {
+          "id": "",
+          "title": "",
+          "description": "",
+          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
+        },
+        {
+          "id": "",
+          "title": "",
+          "description": "",
+          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "description": "",
+      "videos": [
+        {
+          "id": "",
+          "title": "",
+          "description": "",
+          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
+        },
+        {
+          "id": "",
+          "title": "",
+          "description": "",
+          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
+        },
+        {
+          "id": "",
+          "title": "",
+          "description": "",
+          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
+        }
+      ]
+    }
+  ]
+}
