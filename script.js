@@ -6,7 +6,7 @@ let playlists = [];
       const errorDiv = document.getElementById('errorMsg');
       errorDiv.textContent = '';  // Effacer les erreurs précédentes
       try {
-        const response = await fetch('./JsonDB/videos.json');
+        const response = await fetch('/JsonDB/videos.json');
         if (!response.ok) {
           throw new Error(`HTTP error ${response.status} — impossible de charger videos.json à l’URL ${response.url}`);
         }
