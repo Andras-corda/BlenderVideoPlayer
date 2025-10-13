@@ -5,106 +5,13 @@
       "description": "formation pour vous apprendre le sculting dans blender",
       "videos": [
         {
-          "id": "DLbS98uon6Y",
-          "title": "01 What's digital sculpting",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/DLbS98uon6Y/mqdefault.jpg"
-        },
-        {
-          "id": "QE2TtpH7sEA",
-          "title": "02 Should you use a tablet",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/QE2TtpH7sEA/mqdefault.jpg"
-        },
-        {
-          "id": "xzpYJnq_NcA",
-          "title": "03 sculpting interface overview",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/xzpYJnq_NcA/mqdefault.jpg"
-        },
-        {
-          "id": "Sn_ZniDSnIU",
-          "title": "04 matcaps lighting",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/Sn_ZniDSnIU/mqdefault.jpg"
-        },
-        {
-          "id": "I6iov69ZKws",
-          "title": "05 brushes",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/I6iov69ZKws/mqdefault.jpg"
-        },
-        {
-          "id": "qH7O9uJgj5g",
-          "title": "06 dyntopo",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/qH7O9uJgj5g/mqdefault.jpg"
-        },
-        {
-          "id": "Ue6H9M4A9R8",
-          "title": "09 working with multiple objects",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/Ue6H9M4A9R8/mqdefault.jpg"
-        },
-        {
-          "id": "",
-          "title": "",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
-        },
-        {
-          "id": "",
-          "title": "",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
-        }
-      ]
-    },
-    {
-      "name": "",
-      "description": "",
-      "videos": [
-        {
-          "id": "",
-          "title": "",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
-        },
-        {
-          "id": "",
-          "title": "",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
-        },
-        {
-          "id": "",
-          "title": "",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
-        }
-      ]
-    },
-    {
-      "name": "",
-      "description": "",
-      "videos": [
-        {
-          "id": "",
-          "title": "",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
-        },
-        {
-          "id": "",
-          "title": "",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
-        },
-        {
-          "id": "",
-          "title": "",
-          "description": "",
-          "thumbnail": "https://img.youtube.com/vi/ /mqdefault.jpg"
+          "video": {
+            "id": "DLbS98uon6Y",
+            "url": "https://www.youtube.com/watch?v=DLbS98uon6Y",
+            "title": "What's digital sculpting",
+            "description": "",
+            "thumbnail": "https://img.youtube.com/vi/DLbS98uon6Y/mqdefault.jpg"
+          }
         }
       ]
     }
